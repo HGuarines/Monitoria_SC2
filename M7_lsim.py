@@ -1,6 +1,6 @@
 """ Demonstração de como utilizar o lsim """
 
-import control.matlab as ctrl
+import control.matlab as ctrl #lsim só funciona no control.matlab!!
 import numpy as np
 
 # Definindo as matrizes de Espaço de Estado
@@ -19,6 +19,6 @@ sist_ss = ctrl.StateSpace(A, B, C, D)
 # Definindo entrada U, tempo e X0
 u = 0
 t = np.linspace(0, 10, 500)
-x0 = np.array([[1],[0]])
+x0 = np.array([[1],[0],[0]])
 
-yout, tempo_y, xout = ctrl.lsim(sist_ss, u, t, x0)
+y_out, T_out, x_out = ctrl.lsim(sist_ss, u, t, x0)
