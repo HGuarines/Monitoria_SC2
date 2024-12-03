@@ -3,8 +3,9 @@ from control import tf, bode_plot, bode
 a = 10**(9.5/20)
 k = 2000*a
 # Define a função de transferência
-numerador = [k  , k*1000]
-denominador = [1, 10010, 100000, 0]
+numerador = [1, 4]
+# numerador = [1, 4, 100]
+denominador = [1, 3, 5]
 
 sistema = tf(numerador, denominador)
 
