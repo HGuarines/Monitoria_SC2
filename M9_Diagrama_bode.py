@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 from control import tf, bode_plot, bode
-a = 10**(9.5/20)
-k = 2000*a
+
 # Define a função de transferência
 numerador = [1, 4]
 # numerador = [1, 4, 100]
