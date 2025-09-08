@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from control import tf, bode_plot, bode
+from control import tf, bode_plot
 
 # Define a função de transferência
 numerador = [1, 4]
